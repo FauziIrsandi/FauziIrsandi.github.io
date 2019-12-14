@@ -1,0 +1,175 @@
+body {
+    background-color: pink;
+}
+.body-login {
+    margin: 0;
+    padding: 0;
+    background-size: auto;
+    /*background-position: center;*/
+    font-family: "Arial";
+}
+
+.title {
+    font-family: "Source Sans Pro";
+    width: 100%;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.loginbox {
+    background: #FFFFFF;
+    color: #000000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 50px 30px;
+    border-radius: 7px;
+}
+
+
+
+.loginbox h1 {
+    margin: 0;
+    padding: 0 0 29px;
+    font-family: "Source Sans Pro";
+    font-size: 30px;
+    text-align: center;
+    color: red;
+}
+
+.loginbox p {
+    font-family: "Source Sans Pro";
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #42A5F5;
+}
+
+.loginbox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #000000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000;
+    font-size: 16px;
+}
+
+.loginbox input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #000000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000000;
+    font-size: 16px;
+}
+
+.loginbox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #42A5F5;
+    font-size: 18px;
+    color: #FFFFFF;
+    border-radius: 20px;
+}
+
+.loginbox input[type="submit"]:hover {
+    cursor: pointer;
+    background: #42A5F5;
+    color: #FFFFFF;
+}
+
+
+@media screen and (min-width: 400px) {
+    .loginbox {
+        width: 55%;
+        height: 65%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .loginbox {
+        width: 55%;
+        height: 65%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .loginbox {
+        width: 35%;
+        height: 65%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+html, body, .site-wrapper {
+    width: 100%;
+    height: 100%;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.site-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #42A5F5;
+}
+
+
+/* kalau misal ada dua id di koma brarti ngeload css yangsama */
+#popup-success,
+#popup-danger{
+    width: 500px;
+    overflow: hidden;
+    background: #f1f1f1;
+    box-shadow: 0 0 20px black;
+    border-radius: 8px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    /* transform untuk meletakkan popup di tengah layar */
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    text-align: center;
+    /* awal popup tidak ke tampil */
+    display: none;
+}
+
+#popup-success span{
+    color: #2ecc71;
+    font-size:40px;
+    display: block;
+    margin: 20px 0;
+}
+
+#popup-danger span{
+    color: #ff0000;
+    font-size:40px;
+    display: block;
+    margin: 20px 0;
+}
+
+#popup-success,
+#popup-danger h1{
+    color: #333;
+}
+
+.tutup{
+    font-size: 18px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #3498db;
+    display: inline-block;
+    border-radius: 4px;
+}

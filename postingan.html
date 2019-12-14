@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Buat Postingan</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="src/css/styles.css">
+</head>
+
+<body class="fullpage">
+  <!--==============================header=================================-->
+  <header class="header">
+        <div class="logo">E <span>-</span> TES</div>
+        <input class="menu-btn" type="checkbox" id="menu-btn" ></input>
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinasi.html">Destinasi</a></li>
+          <li><a href="kuliner.html">Kuliner</a></li>
+          <li><a href="daftar.html">Pendaftaran</a></li>
+          <li><a class="select" href="postingan.html">Posting</a></li>
+          <li><a href="login.html">Logout</a></li>
+        </ul>
+  </header>
+
+  <div class="main">
+    <!--=======content================================-->
+
+    <div class="content">
+      <div class="container_12">
+        <div class="grid_12">
+          <fieldset class="formulir">
+            <legend>
+              <h3 class="warna">Buat Postingan Baru</h3>
+            </legend>
+
+            <div class="bingkai-foto">
+              <form action="">
+                Judul Postingan : <br>
+                <input class="mabott" size="45" maxlength="30" type="text" name="firstname" id="firstname" required><br>
+                Agama : <br>
+                <select class="mabott" name="agama" id="agama" required>
+                  <option value="">Pilih Kategori</option>
+                  <option value="kuliner">Kuliner</option>
+                  <option value="destinasi">Destinasi</option>
+                </select><br>
+                Isi Postingan : <br>
+                <textarea class="mabott" name="alamat" id="alamat" cols="45" rows="5" required></textarea><br>
+                <img class="img" id="gambarpreview" src=""/>
+                <b>Pilih Gambar :</b><br>
+
+                <!-- class input gambar untuk mentransfer gambar yg di pilih untuk di panggil pada id=gambar preview -->
+                <input id="ingambar" class="mabott inputgambar" type="file" name="sks" id="sks" required><br><br>
+                <input id="daftar1" type="button" value="Posting">
+              </form>
+          </div>
+
+          </fieldset>
+
+        </div>
+        <div class="clear"></div>
+
+
+
+      </div>
+    </div>
+
+
+
+    <!--=======bottom================================-->
+    <div class="bottom_block">
+      <div class="container_12">
+        <div class="grid_3">
+          <ul>
+            <img src="BAHAN/LOGO.png" alt="">
+          </ul>
+        </div>
+        <div class="grid_2">
+          <ul>
+            Website resmi Dinas Pariwisata Kota Jember yang bertujuan untuk mempermudah wisatawan lokal maupun domestik untuk mendapatkan informasi dan mengeksplor tentang keindahan destinasi wisata, event, dan juga kuliner yang ada di Kota Jember
+          </ul>
+        </div>
+        <div class="grid_4">
+          <ul>
+            <img src="BAHAN/pariwisata%20jember%20228.25%20mm%2047.135%20mm.png" alt="">
+          </ul>
+        </div>
+        <div class="grid_1">
+          <ul>
+            <a href="#"><img src="BAHAN/alamat.png" alt=""></a>
+
+          </ul>
+        </div>
+        <div class="grid_2">
+          <ul>
+
+            Jl. Jawa 74 Jember, Sumbersari, Gumuk Kerang, Kabupaten Jember, Jawa Timur
+
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <!--==============================footer=================================-->
+
+  </div>
+  <footer>
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="socials">
+          <a href="#"><img src="BAHAN/fb.png" alt=""></a>
+          <a href="#"><img src="BAHAN/gmail.png" alt=""></a>
+          <a href="#"><img src="BAHAN/twit.png" alt=""></a>
+          <a href="#"><img src="BAHAN/ig.png" alt=""></a>
+        </div>
+        <div class="copy">
+          Pweb &copy; 2019 | <a href="#">Privacy Policy</a> | Website designed by 35club
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+  </footer>
+
+</body>
+
+<!-- memanggil javascript harus menyertkan jquery.js yaitu library pendukung -->
+<script type="text/javascript" src="src/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="src/js/javascript.js"></script>
+
+</html>

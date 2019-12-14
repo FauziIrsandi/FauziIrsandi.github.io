@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="src/css/login/login.css">
+    <title>Login</title>
+</head>
+<body>
+<div class="title">
+    <h1>E - tes</h1>
+</div>
+<div class="loginbox">
+    <h1>Login</h1>
+
+    <form name="myForm" action="index.html" onsubmit="return validateForm()">
+        <p>Username</p>
+        <input type="text" name="username" placeholder="Username">
+        <p>Password</p>
+        <input type="password" name="password" placeholder="Password">
+<!-- ======    <form action="index.html" onsubmit="validation()">
+        <p>Username</p>
+        <input type="text" name="username" placeholder="Username" required>
+        <p>Password</p>
+        <input type="password" name="password" placeholder="Password" required> -->
+
+        <input type="submit" name="submit" value="Login">
+<br>
+<p> Anda belum punya akun? Silahkan<p> <a href="#" class="btn">Daftar</a>
+</form>
+    <!-- cari css dengan id pop-up success -->
+    <div id="popup-success">
+        <span class="icon ion-md-checkmark"></span>
+        <h1>Anda Berhasil Login</h1><br><br>
+        <a onclick="lanjut()" class="tutup">Oke</a>
+    </div>
+    <div id="popup-danger">
+        <span class="icon ion-md-close-circle-outline"></span>
+        <h1>Username atau Password Salah</h1><br><br>
+        <a onclick="gagal()" class="tutup">Kembali</a>
+    </div>
+  </div>
+
+</body>
+<script type="text/javascript" src="src/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="src/js/javascript.js"></script>
+
+</html>
